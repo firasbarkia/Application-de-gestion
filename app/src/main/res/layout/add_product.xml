@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="100sp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add Product"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_white"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:hint="name"/>
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_white"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:hint="price"/>
+    <EditText
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_white"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:hint="description"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="add"/>
+    </RelativeLayout>
+
+</LinearLayout>
